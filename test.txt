@@ -1,0 +1,4 @@
+This is a sample text file for testing the document analyzer.
+It contains some named entities like Microsoft, Google, and Apple.
+The companies are working on artificial intelligence and machine learning projects.
+John Smith from New York is leading the research team at OpenAI. 
