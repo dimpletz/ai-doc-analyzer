@@ -56,6 +56,33 @@ The analyzer will output:
 - Named entities found (companies, people, locations, etc.)
 - Key terms and concepts from the text
 
+## Testing
+
+The project includes comprehensive tests for all major components. To run the tests:
+
+1. Run all tests:
+   ```bash
+   poetry run pytest
+   ```
+
+2. Run tests with coverage report:
+   ```bash
+   poetry run pytest --cov=app tests/
+   ```
+
+3. Run specific test files:
+   ```bash
+   poetry run pytest tests/test_main.py
+   poetry run pytest tests/test_utils.py
+   ```
+
+The test suite includes:
+- Unit tests for document text extraction
+- Tests for AI model functionality (NER, keyword extraction, summarization)
+- Integration tests for the main application
+- Tests for error handling and edge cases
+- Tests for the ModelManager singleton pattern and lazy loading
+
 ## Supported File Formats
 
 - PDF (*.pdf)
@@ -70,6 +97,8 @@ The analyzer will output:
 - python-docx: Word document processing
 - scikit-learn: Machine learning utilities
 - joblib: Parallel computing support
+- pytest: Testing framework
+- pytest-cov: Test coverage reporting
 
 ## License
 
